@@ -13,7 +13,7 @@ import re
 
 class ProcessBag:
     def __init__(self, base_path = os.getcwd(),
-                 source_dir_name = 'test',
+                 source_dir_name = 'bag',
                  destination_dir_name = 'test_process_bag',
                  topic_list = ['/hub_0/sensor_0','/hub_0/sensor_1']):
         self.source_dir = base_path + '\\' + source_dir_name

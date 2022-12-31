@@ -12,11 +12,11 @@ def main():
     # Take all of the .bag files in the bag folder, process the topics in topic list, and put in destination dir, inside
     # of the "processed_data" directory.
     # TODO The ground truth in this is experiment dependent. You will want to update this, probably.
-    _ = ProcessBag(destination_dir_name=destination_dir_name, topic_list=topic_list)
+    _ = ProcessBag(source_dir_name = 'bag_data',destination_dir_name=destination_dir_name, topic_list=topic_list)
 
     # Take the csv data files and do more data processing. This likely changes per experiment and you will want to
     # implement your own data processing...
-    all_data = AllData2(destination_dir_name,destination_dir_name)
+    # all_data = AllData2(destination_dir_name,destination_dir_name)
 
 def test():
     main()
